@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -5,17 +6,10 @@ public class Main {
         int[] arr = new int[5];
         Scanner soot = new Scanner(System.in);
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = soot
-
+            arr[i] = soot.nextInt();
         }
-
-
-
-
-
-
-
-
-
+        soot.close();
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
